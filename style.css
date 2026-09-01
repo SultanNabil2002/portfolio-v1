@@ -588,3 +588,46 @@ footer p {
     transform: translateX(0);
   }
 }
+
+.project-description-wrap {
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+  margin: 0 1rem;
+}
+
+.project-description-wrap .project-description {
+  margin: 0 0 1rem 0;
+}
+
+.read-more-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: none;
+  border: none;
+  margin: 0.4rem 1rem 1rem;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: rgb(53, 53, 53);
+  cursor: pointer;
+}
+
+.read-more-btn:hover {
+  text-decoration: underline;
+}
+
+.read-more-btn .chevron {
+  width: 0.9rem;
+  height: 0.9rem;
+  transition: transform 0.25s ease;
+}
+
+.read-more-btn.expanded .chevron {
+  transform: rotate(180deg);
+}
+
+.read-more-btn.is-hidden {
+  display: none;
+}
